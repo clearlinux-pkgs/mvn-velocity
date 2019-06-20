@@ -4,15 +4,13 @@
 #
 Name     : mvn-velocity
 Version  : 1.5
-Release  : 1
+Release  : 2
 URL      : https://repo1.maven.org/maven2/org/apache/velocity/velocity/1.5/velocity-1.5.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/velocity/velocity/1.5/velocity-1.5.jar
-Source1  : https://repo1.maven.org/maven2/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0.jar
-Source2  : https://repo1.maven.org/maven2/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0.pom
-Source3  : https://repo1.maven.org/maven2/org/apache/velocity/velocity/1.5/velocity-1.5.pom
-Source4  : https://repo1.maven.org/maven2/org/apache/velocity/velocity/1.6.2/velocity-1.6.2.pom
-Source5  : https://repo1.maven.org/maven2/org/apache/velocity/velocity/1.7/velocity-1.7.jar
-Source6  : https://repo1.maven.org/maven2/org/apache/velocity/velocity/1.7/velocity-1.7.pom
+Source1  : https://repo1.maven.org/maven2/org/apache/velocity/velocity/1.5/velocity-1.5.pom
+Source2  : https://repo1.maven.org/maven2/org/apache/velocity/velocity/1.6.2/velocity-1.6.2.pom
+Source3  : https://repo1.maven.org/maven2/org/apache/velocity/velocity/1.7/velocity-1.7.jar
+Source4  : https://repo1.maven.org/maven2/org/apache/velocity/velocity/1.7/velocity-1.7.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -49,22 +47,14 @@ cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/apache/velocity/vel
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/velocity/velocity/1.7
 cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/apache/velocity/velocity/1.7
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/velocity/velocity-tools/2.0
-cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/apache/velocity/velocity-tools/2.0
-
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/velocity/velocity-tools/2.0
-cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/apache/velocity/velocity-tools/2.0
-
 
 %files
 %defattr(-,root,root,-)
 
 %files data
 %defattr(-,root,root,-)
-/usr/share/java/.m2/repository/org/apache/velocity/velocity-tools/2.0/velocity-1.7.jar
-/usr/share/java/.m2/repository/org/apache/velocity/velocity-tools/2.0/velocity-1.7.pom
 /usr/share/java/.m2/repository/org/apache/velocity/velocity/1.5/velocity-1.5.jar
-/usr/share/java/.m2/repository/org/apache/velocity/velocity/1.5/velocity-tools-2.0.jar
-/usr/share/java/.m2/repository/org/apache/velocity/velocity/1.6.2/velocity-tools-2.0.pom
-/usr/share/java/.m2/repository/org/apache/velocity/velocity/1.7/velocity-1.5.pom
-/usr/share/java/.m2/repository/org/apache/velocity/velocity/1.7/velocity-1.6.2.pom
+/usr/share/java/.m2/repository/org/apache/velocity/velocity/1.5/velocity-1.5.pom
+/usr/share/java/.m2/repository/org/apache/velocity/velocity/1.6.2/velocity-1.6.2.pom
+/usr/share/java/.m2/repository/org/apache/velocity/velocity/1.7/velocity-1.7.jar
+/usr/share/java/.m2/repository/org/apache/velocity/velocity/1.7/velocity-1.7.pom
