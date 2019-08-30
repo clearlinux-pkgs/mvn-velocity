@@ -4,7 +4,7 @@
 #
 Name     : mvn-velocity
 Version  : 1.5
-Release  : 2
+Release  : 3
 URL      : https://repo1.maven.org/maven2/org/apache/velocity/velocity/1.5/velocity-1.5.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/velocity/velocity/1.5/velocity-1.5.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/velocity/velocity/1.5/velocity-1.5.pom
